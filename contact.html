@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Mon premier titre</title>
+        <meta name="description" content="Ceci est mon premier site créé lors de ma formation.">
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">            
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <div></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Aller à la page">Accueil</a></li>
+                    <li><a href="contact.html" title="Aller à la page">Contact</a></li>
+                    <li><a href="https://www.interface3namur.be" title="Aller à la page" target="_blank">Interface3.Namur</a></li>
+                </ul>
+            </nav>
+      </header>
+
+      <main>
+          <h1>Contact</h1>
+            <section>
+                <h2>Horaire</h2>
+                <article>
+                    <table>
+                        <caption>Mes disponibilités</caption>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Lundi</th>
+                                <th>Mardi</th>
+                                <th>Mercredi</th>
+                                <th>Jeudi</th>
+                                <th>Vendredi</th>
+                                <th>Samedi</th>
+                                <th>Dimanche</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Matin</th>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Non dispo</td>
+                            </tr>
+                            <tr>
+                                <th>Soir</th>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Non dispo</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+
+                </article>
+             
+            </section>
+            <section>
+                <form action="index.html" method="POST">
+                    <h2>Formulaire de contact</h2>
+                    <div>
+                        <label for="email">Votre adresse email</label>
+                        <input type="mail" id="mail" name="mail" placeholder="tuto@tuto.com">
+                    </div>
+                    <div>
+                        <label for="select">Je souhaite prendre rdv le:</label>
+                        <select name="rdv" id="rdv">
+                            <optgroup label="Lundi">
+                                <option value="lundiMatin">Matin</option>
+                                <option value="lundiSoir">Soir</option>
+                            </optgroup>
+                            <optgroup label="Mardi">
+                                <option value="mardiMatin">Matin</option>
+                                <option value="mardiSoir">Soir</option>
+                            </optgroup>
+                            <optgroup label="Mercredi">
+                                <option value="mercrediMatin">Matin</option>
+                                <option value="mercrediSoir">Soir</option>
+                            </optgroup>
+                            <optgroup label="Jeudi">
+                                <option value="jeudiMatin">Matin</option>
+                                <option value="jeudiSoir">Soir</option>
+                            </optgroup>
+                            <optgroup label="Vendredi">
+                                <option value="vendrediMatin">Matin</option>
+                                <option value="vendrediSoir">Soir</option>
+                            </optgroup>
+                            <optgroup label="Samedi">
+                                <option value="SamediMatin">Matin</option>
+                                <option value="SamediSoir">Soir</option>
+                            </optgroup>
+                            <optgroup label="Dimanche">
+                                <option value="dimancheMatin" disabled>Matin</option>
+                                <option value="dimancheSoir"disabled>Soir</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="zoneDeTexte">Entrez votre message ici:</label>
+                    </div>
+                    <div id="textarea">
+                        <textarea name="zoneDeTexte" id="zoneDeTexte" cols="30" rows="10" placeholder="Bonjour..."></textarea>
+                    </div>
+                    <div>
+                        <label for="subscription">Je m'inscrit à la newsletter</label>
+                        <input type="checkbox" checked>
+                    </div>
+                    <div>
+                        <label for="file">Votre coupon de réduction (.pdf)</label>
+                        <input type="file" accept=".pdf">
+                    </div>
+                    <div id="btn">
+                        <input type="submit" value="Envoyer formulaire">
+                        <input type="reset" value="Annuler">
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <h4>Informations</h4>
+            <p>Site web pour <strong>Développeur Back-end orienté Data</strong></p>
+            <p><strong>Yasmin Taibi</strong> &copy;2021</p>
+        </footer>
+       
+
+    </body>
+
+
+</html>

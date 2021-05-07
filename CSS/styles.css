@@ -1,0 +1,193 @@
+/* Mise en forme générale */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(245,245,245);
+    color: #333;
+    font-family: 'Roboto', Arial, Verdana;
+    font-size: 1em;
+    line-height: 1.25;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Mise en forme header  */
+
+header{
+    color: white;
+    background-color: rgba(163,203,77,0.9);
+    padding-bottom: 1px;
+}
+
+/*Bannière*/
+header div{
+    border: 1px solid black;
+    height: 25vh;
+    background-image: url(../images/banner-01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center;
+}
+
+ header nav li {
+     margin: 12px;
+     list-style: none;
+     display: inline-block;
+ }
+
+ header nav li a {
+     font-size: 1.4em;
+     font-weight: 600;
+     padding: 7px;
+     color: rgb(255,255,255);
+     background-color: rgba(0,0,0,0);
+ }
+
+ header nav li a:hover {
+     color: rgb(186,247,54);
+     background-color: rgba(0,0,0,.5);
+     transition: 1s;
+ }
+
+ header nav ul{
+    text-align: center; /* Permet de centrer le texte */
+}
+p {
+    margin-bottom: 12px;
+}
+/*Centrer le contenu*/
+main{
+    padding: 24px 18px;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: rgb(235,235,235);
+}
+main h1{
+    color: #214567;
+    padding-bottom: 24px;
+    border-bottom: 1px dotted #214567;
+    font-size: 2.6em;
+    font-weight: 800;
+    margin-bottom: 24px;
+    text-align: center;
+}
+main h2{
+    font-size: 1.6em;
+    font-weight: 300;
+    margin-bottom: 18px;
+    color: #fff;
+    background-color: #214567;
+    padding: 7px;
+}
+main h3, table caption{
+    font-size: 1.6em;
+    margin-bottom: 12px;
+
+}
+main article{
+    padding-bottom: 18px;
+    margin-bottom: 12px;
+}
+/*Justifier le texte*/
+main p{
+    text-align: justify;
+}
+/* Mise en place de la gallerie d'images */
+main figure{
+    margin-bottom: 12px;
+}
+main figcaption{
+    color: rgb(242,242,242);
+    background-color: #383b3f;
+    padding: 7px;
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/* Tableau disponibilités */
+
+table{
+    margin: 100px auto;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(163,203,77,0.9);
+    border-collapse: collapse;
+    box-shadow: 12px 12px 5px rgba(0,0,0,.15);
+}
+thead tr{
+    background-color: rgba(163,203,77,0.9);
+}
+
+/* Footer */
+
+footer{
+    color: rgb(217,217,217);
+    background-color: rgb(64,64,64);
+    padding: 24px 18px;
+    text-align: center;
+}
+footer h3{
+    font-size: 1.2em;
+    margin-bottom: 12px;
+    color: white;
+}
+.souligne{
+    text-decoration: underline;
+}
+.majuscule{
+    text-transform: uppercase;
+}
+
+/* Formulaire de contact */
+
+#textarea{
+    border: 2px solid #214567;
+    border-radius: 5px;
+
+}
+
+/* Boutons */
+#btn{
+    width: 100px;
+    color: #214567;
+    margin: 15px;
+    background-color: rgba(163,203,77,0.9) ;
+    border-radius: 5px;
+    display: inline-block;
+    shadow: 2.5px 2.5px 2.5px #d89bf0;
+    cursor: pointer;
+    /* justify-content: space-between; */
+}
+#btn:hover{
+    background-color: #214567;
+
+}
+
+/* Taille de l'écran/responsive */
+
+@media screen and (min-width:780px){
+
+    /* Mise en place de la gallerie d'images  */
+
+    .flexing{
+        display: flex;
+    }
+    #gallery{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #gallery figure{
+        width: 47.5%;
+    }
+
+}
+
